@@ -1,0 +1,51 @@
+<p><a href="https://pydantic-docs.helpmanual.io/" target="_blank" rel="noopener">Pydantic</a> is an awesome library to do</p>
+<p><em>data validation and settings management using python type annotations</em>.</p>
+<p>FastAPI is a heavy user of it so let's learn it now! :)</p>
+<p>If you are new to typing / type annotations, maybe you want to complete <a href="../../../../../bites/203/" target="_blank" rel="noopener">this Bite</a> first, and/or read <a href="https://pybit.es/articles/code-better-with-type-hints-part-1/" target="_blank" rel="noopener">our article series</a>.</p>
+<p>In this Bite you are going to define your first Pydantic <code>Food</code> model.</p>
+<p>A model is a class with one or more (typed) attributes. To get all Pydantic's goodness we'll need to subclass Pydantic's <code>BaseModel</code> class, <a href="https://pydantic-docs.helpmanual.io" target="_blank" rel="noopener">Pydantic's homepage</a> shows you how and it's probably enough detail to solve this Bite.</p>
+<p>This is the <code>Food</code>&nbsp;model you'll define now and use in upcoming Bites. Our tests will use and test it.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 32.3919%;"><strong>Attribute</strong></td>
+<td style="width: 32.3919%;"><strong>Type</strong></td>
+<td style="width: 32.3919%;"><strong>Example</strong></td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">id</td>
+<td style="width: 32.3919%;">int</td>
+<td style="width: 32.3919%;">1</td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">name</td>
+<td style="width: 32.3919%;">str</td>
+<td style="width: 32.3919%;">oatmeal</td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">serving_size</td>
+<td style="width: 32.3919%;">str</td>
+<td style="width: 32.3919%;">100 grams</td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">kcal_per_serving *</td>
+<td style="width: 32.3919%;">int</td>
+<td style="width: 32.3919%;">336</td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">protein_grams</td>
+<td style="width: 32.3919%;">float</td>
+<td style="width: 32.3919%;">13.2</td>
+</tr>
+<tr>
+<td style="width: 32.3919%;">fibre_grams</td>
+<td style="width: 32.3919%;">float</td>
+<td style="width: 32.3919%;">10.1</td>
+</tr>
+</tbody>
+</table>
+<p><em><br />* kcal = calories</em></p>
+<p><em>** <code>fibre_grams</code> is an optional value which defaults to 0.</em></p>
+<p>We'll come back to Pydantic in a later Bite to define two more models to track food intake for a user day by day. For we won't overload you with object relationships that multiple models inevitably introduce. Step by step!</p>
+<p>In the following Bites we'll use this Pydantic model to build the API's CRUD (create-read-update-delete) actions around it.</p>
+<p>Have fun with Pydantic!</p>
